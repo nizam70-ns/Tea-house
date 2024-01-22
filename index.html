@@ -2,70 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-    <!-- talwind and daysi UI  use korare karone ayta use kori-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- menrope google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap" rel="stylesheet">
-    <!-- font awsome your kids link  -->
-    <script src="https://kit.fontawesome.com/2f8ef4e970.js" crossorigin="anonymous"></script>
-    <!-- talwind custom color  came form talwind play cdn -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+  <!-- talwind and daysi UI  use korare karone ayta use kori-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- menrope google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap" rel="stylesheet">
+  <!-- font awsome your kids link  -->
+  <script src="https://kit.fontawesome.com/2f8ef4e970.js" crossorigin="anonymous"></script>
+  <!-- talwind custom color  came form talwind play cdn -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
-    <style>
-        .font-manrope{
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
 
 <body class="font-manrope">
-    <header>
+  <header>
     <section class="container mx-auto">
-        <div class="hero min-h-screen ">
-            <div class="hero-content flex-col lg:flex-row">
-             
+      <div class="hero min-h-screen ">
+        <div class="hero-content flex-col lg:flex-row">
+
+          <div>
+            <h1 class="text-7xl font-extrabold">It's good<br>
+              tea time at <br>The Tea House</h1>
+            <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <img src="../Tea-house/images/banner.png" class="max-w-sm " />
+            <!-- rating badge  -->
+            <div class=" -mt-16 flex items-center gap-4 text-3xl drop-shadow-lg bg-white p-5 w-60 ">
+              <i class="fa-solid fa-star text-amber-400"></i>
               <div>
-                <h1 class="text-7xl font-extrabold">It's good<br>
-                    tea time at <br>The Tea House</h1>
-                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary">Explore More</button>
+                <h3 class="text-3xl">5.00</h3>
+                <p>Trust Pilot Ratings</p>
               </div>
-            <div>
-              <img src="../Tea-house/images/banner.png" class="max-w-sm " />
-              <!-- rating badge  -->
-              <div class=" -mt-16 flex items-center gap-4 text-3xl drop-shadow-lg bg-white p-5 w-60 ">
-                <i class="fa-solid fa-star text-amber-400"></i>
-                <div>
-                  <h3 class="text-3xl">5.00</h3>
-                  <p>Trust Pilot Ratings</p>
-                </div>
-              </div>
-            </div>
             </div>
           </div>
+        </div>
+      </div>
     </section>
-    </header>
-    <main>
+  </header>
+  <main class="container mx-auto">
+    <!-- featured secton  -->
+    <section class="text-center my-24">
+      <h2 class="text-5xl font-extabold mb-5">Our Featured Products</h2>
+      <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum
+        available, but the majority have suffered alteration
+        in some form, by injected humour, or randomised words
+        which don't look even slightly believable. </p>
+      <!-- feture tea  card container  -->
+      <div class=" grid gap-5 grid-col-1 md:grid-cols-2 lg:grid-cols-4">
+        <!-- frist card came form daisy  UI khala -->
+        <div class="card p-8  bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+          <figure><img src="../Tea-house/images/tea-1.png" alt="Shoes" /></figure>
+          <div class="card-body justify-center">
+            <h2 class="text-center text-2xl font-bold">Milk Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
 
-    </main>
-    <footer>
+        <!-- second card came form daisy  UI khala -->
+        <div class="card p-8  bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+          <figure><img src="../Tea-house/images/tea-2.png" alt="Shoes" /></figure>
+          <div class="card-body justify-center">
+            <h2 class="text-center text-2xl font-bold">Black Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        
+        <!-- third card came form daisy  UI khala -->
+        <div class="card p-8  bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+          <figure><img src="../Tea-house/images/tea-3.png" alt="Shoes" /></figure>
+          <div class="card-body justify-center">
+            <h2 class="text-center text-2xl font-bold">Lemon Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <!-- fourth card came form daisy  UI khala -->
+        <div class="card p-8  bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]  shadow-xl">
+          <figure><img src="../Tea-house/images/tea-4.png" alt="Shoes" /></figure>
+          <div class="card-body justify-center">
+            <h2 class="text-center text-2xl font-bold">Green Tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
 
-    </footer>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 
 </body>
 
